@@ -15,14 +15,15 @@ class DefaultButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return Container(
       padding: EdgeInsets.symmetric(
         vertical: kDefaultPadding,
         horizontal: kDefaultPadding * 2.5,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+      decoration: BoxDecoration(
+       borderRadius: BorderRadius.circular(50), 
+      ),     
       color: Color(0xFFE8F0F9),
-      onPressed: press,
       child: Row(
         children: [
           Image.asset(imageSrc, height: 40),
