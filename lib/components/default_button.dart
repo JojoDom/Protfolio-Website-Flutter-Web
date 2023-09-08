@@ -23,7 +23,6 @@ class DefaultButton extends StatelessWidget {
       decoration: BoxDecoration(
        borderRadius: BorderRadius.circular(50), 
       ),     
-      color: Color(0xFFE8F0F9),
       child: Row(
         children: [
           Image.asset(imageSrc, height: 40),
